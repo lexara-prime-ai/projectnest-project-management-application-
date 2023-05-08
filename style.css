@@ -1,0 +1,512 @@
+/* GOOGLEFONTS */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+	/* COLOR PALETTE */
+	--cyan: #aec7c6;
+	--white: #FBFBFBff;
+	--white-alt: #eeeeee;
+	--periwinkle: #C3BEDCff;
+	--davys-gray: #565656ff;
+	--gray-alt: #888888;
+	--light-gray: #979797;
+	--dark: #242424;
+    --lavender: #B7B0DD;
+
+	/* SHADOWS */
+	--shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, .2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.main-container {
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: start;
+    padding-top: 2.5%;
+    padding-bottom: 2rem;
+    max-width: 500px;
+    margin: auto;
+    cursor: pointer;
+    transition: .4s all ease;
+    opacity: 1;
+}
+
+.logo:hover {
+    opacity: .8;
+    transform: translateY(-4px);
+}
+
+.logo img {
+    width: 15%;
+    animation: slide-fwd-center 1s;
+}
+
+.logo p {
+    color: var(--davys-gray);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: var(--dark);
+    font-size: 3rem;
+    font-family: 'Martel Sans', sans-serif;
+    animation: bounce-top 1s;
+}
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+
+.header h2 {
+    color: var(--lavender);
+    font-size: 1.5rem;
+    font-weight: 600;
+    animation: bounce-top .5s;
+}
+
+/*----------------------
+* FORM CONTAINER
+*-----------------------
+*/
+.form-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container ::placeholder {
+    color: var(--lavender);
+}
+.passwordcontainer_register p{
+    font-size: 10.5px;
+    color: #888888;
+}
+#username {
+    border: 2.5px solid var(--lavender);
+    border-radius: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 24em;
+    font-size: 16px;
+    padding-bottom: 15px;
+
+}
+#username1 {
+    border: 2.5px solid var(--lavender);
+    border-radius: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 24em;
+    font-size: 16px;
+    padding-bottom: 15px;
+
+}
+#username2 {
+    border: 2.5px solid var(--lavender);
+    border-radius: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 24em;
+    font-size: 16px;
+    padding-bottom: 15px;
+
+}
+
+#username3 {
+    border: 2.5px solid var(--lavender);
+    border-radius: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 24em;
+    font-size: 16px;
+    padding-bottom: 15px;
+
+}
+
+#password {
+    border: 2.5px solid var(--lavender);
+    border-radius: 25px;
+    padding: 12px;
+    width: 24em;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.password_container {
+    position: relative;
+}
+
+.password_container ion-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 28%;
+    left: 50%;
+    padding-left: 150px;
+    color: var(--lavender);
+}
+
+.password_container_register {
+    position: relative;
+
+}
+
+
+/*----------------------
+* PASSWORD EYE ICON
+*-----------------------
+*/
+.password_container_register ion-icon {
+    position: absolute;
+    color: var(--lavender);
+}
+
+.iconone {
+    top: 8%;
+    left: 50%;
+    padding-left: 150px;
+    cursor: pointer;
+}
+
+.icontwo {
+    top: 72%;
+    left: 50%;
+    padding-left: 150px;
+    cursor: pointer;
+}
+
+#passwordII {
+    border: 2.5px solid var(--lavender);
+    border-radius: 25px;
+    padding: 12px;
+    width: 24em;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.form-container p {
+    padding-top: 7px;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--lavender);
+    font-size: 1rem;
+}
+
+#loginbtn {
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 24em;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 13.5px;
+    color: white;
+    background-color: #3B3B3B;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: .4s all ease;
+    animation: hover 1.5s infinite;
+}
+
+#loginbtn:hover {
+    box-shadow: none;
+    transform: translateY(-4px);
+}
+
+/*
+*------------------------------------
+*   Hover Animation
+*------------------------------------
+*/
+@-webkit-keyframes hover {
+    0% {
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+    }
+    50% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+    }
+}
+@keyframes hover {
+    0% {
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+    }
+    50% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+    }
+}
+
+.reminder-section {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--lavender);
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox */
+#remember-me+label::before {
+    content: "";
+    display: inline-block;
+    width: 15.5px;
+    height: 15.5px;
+    border: 3px solid #ccc;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+/* custom checkbox when clicked*/
+#remember-me+label::before {
+    border-radius: 2px;
+    margin-right: 10px;
+    border-color: var(--lavender);
+}
+
+input[type="checkbox"]:checked+label[for="remember-me"]::before {
+    background-color: gray;
+    border-color: var(--lavender);
+}
+
+.form_container h4 {
+    color: var(--lavender);
+}
+
+.form_container span {
+    font-weight: bolder;
+    border-bottom: 4.5px solid transparent;
+}
+
+.form_container span:hover {
+    border-bottom-color: var(--lavender);
+}
+
+input {
+    transition: .4s all ease;
+}
+
+input:hover {
+    background: white;
+    box-shadow: var(--shadow);
+    border: 1px solid transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*
+*--------------------------------
+*   ERROR STYLING
+*----------------------------------
+*/
+.input-group span {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.input-error {
+    border: 1px solid tomato;
+}
+
+.error-message {
+    font-size: .8rem;
+    font-weight: 900;
+    color: tomato;
+    text-transform: capitalize;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .4;
+    }
+}
+
+#signupbtn {
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 24em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 10.5px;
+    color: white;
+    background-color: #3B3B3B;
+}
+
+/*-----------------------------
+*   FOOTER SECTION
+*------------------------------
+*/
+.footer_details {
+    margin-top: 12%;
+    color: var(--lavender);
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.footer_details span {
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+    transition: .4s all ease;
+    cursor: pointer;
+}
+
+.footer_details span:hover {
+    border-bottom-color: var(--lavender);
+}

@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "Usersemail": "muchok.ii",
+      "Userfullname": "sxdfvgb",
+      "Username": "sxdcfvg",
+      "PasswordII": "sxdcfv",
+      "password": "newpassword123",
+      "id": 1
+    },
+    {
+      "Usersemail": "jhygtrfd",
+      "Userfullname": "gbfde",
+      "Username": "gbfvde",
+      "PasswordII": "123",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "Usersemail": "wambui@2020",
+      "Userfullname": "Esth Wambui",
+      "Username": "wambuii",
+      "PasswordII": "wamuyu",
+      "password": "wamuyu",
+      "id": 3
+    },
+    {
+      "Usersemail": "stacknewbie",
+      "Userfullname": "sdadasd",
+      "Username": "sadsd",
+      "PasswordII": "asdasd",
+      "password": "asdasd",
+      "id": 4
+    },
+    {
+      "Usersemail": "monica@gmail.com",
+      "Userfullname": "Monica",
+      "Username": "monica",
+      "PasswordII": "1234",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "Usersemail": "stacknewbie",
+      "Userfullname": "stacknewbie",
+      "Username": "stacknewbie",
+      "PasswordII": "1234",
+      "password": "1234",
+      "id": 6
+    }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "status": "completed"
+    }
+  ],
+  "projects": [
+    {
+      "projectName": "fifty8 sports ui updat000e",
+      "assignedTo": "john",
+      "category": "software",
+      "level": 3,
+      "id": 6
+    },
+    {
+      "projectName": "Coca cola logo design",
+      "assignedTo": "carla",
+      "category": "design",
+      "level": 2,
+      "id": 7
+    },
+    {
+      "projectName": "fifty8 sports ui update",
+      "assignedTo": "anita",
+      "category": "web development",
+      "level": 1,
+      "id": 8
+    },
+    {
+      "projectName": "Some new updated project ",
+      "assignedTo": "Zara",
+      "category": "Operating Systems",
+      "level": 1,
+      "id": 9
+    },
+    {
+      "projectName": "Bridge design",
+      "assignedTo": "melvin",
+      "category": "3d modelling",
+      "level": 1,
+      "id": 10
+    }
+  ]
+}
